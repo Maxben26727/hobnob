@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".profileFragment">
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_margin="10dp"
+     android:id="@+id/profile_linear"
+     android:gravity="center_horizontal"
+     android:orientation="vertical">
+
+     <RelativeLayout
+         android:id="@+id/profile_layout"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         >
+
+         <de.hdodenhof.circleimageview.CircleImageView
+             android:id="@+id/user_pic"
+             android:layout_width="110dp"
+             android:layout_height="110dp"
+             android:layout_marginTop="10dp"
+             app:civ_border_color="#000"
+             android:src="@drawable/ic_person_black_24dp"
+             app:civ_border_width="2dp" />
+
+         <ImageButton
+             android:id="@+id/change_pic_btn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="-30dp"
+             android:layout_alignTop="@id/user_pic"
+             android:layout_toEndOf="@id/user_pic"
+             android:background="@drawable/black_radius"
+             android:padding="5dp"
+             android:src="@drawable/ic_photo_camera_black_24dp" />
+
+     </RelativeLayout>
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+
+         android:textSize="20sp"
+         android:textColor="#000"
+         android:id="@+id/username"
+         android:textAlignment="center"
+         android:fontFamily="@font/abel"
+         />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:layout_margin="10dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="14sp"
+        android:gravity="bottom"
+        android:layout_marginStart="3dp"
+        android:textColor="#000"
+        android:text="About"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+    <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:id="@+id/about_et"
+        android:maxLines="10"
+      android:paddingStart="10dp"
+        android:paddingEnd="32dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:maxLength="130"
+
+      android:fontFamily="@font/changa"
+        android:hint="type something related to u.."
+        android:layout_margin="3dp"
+        android:background="@drawable/greenbg"
+        android:enabled="false"
+        />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/btn_emoji"
+                android:layout_width="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="25dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/open_emo"
+                android:background="@color/transparent"
+                />
+            <ImageButton
+                android:id="@+id/edit_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:layout_marginEnd="5dp"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_mode_edit_black_24dp"
+                />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginStart="3dp"
+            android:textColor="#000"
+            android:text="Phone"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/phone_tv"
+   android:padding="10dp"
+    android:textColor="#fff"
+    android:fontFamily="@font/changa"
+    android:layout_margin="3dp"
+    android:background="@drawable/greenbg"/>
+    </LinearLayout>
+
+
+
+ </LinearLayout>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:background="@drawable/greenbg"
+    android:text="LOGOUT"
+    android:id="@+id/logout"
+    android:textColor="#fff"
+    android:fontFamily="@font/abel"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="10dp"/>
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi_logout"
+        style="@style/AVLoadingIndicatorView"
+        app:indicatorName="BallClipRotateMultipleIndicator"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        app:indicatorColor="#000"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

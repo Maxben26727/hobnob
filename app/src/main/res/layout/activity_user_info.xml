@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_start"
+    tools:context=".AddGroupActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:id="@+id/title"
+        android:text="Profile"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+       android:layout_marginTop="40dp"
+       android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+
+            android:orientation="horizontal">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_icon"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    app:civ_border_color="#000"
+                    android:src="@drawable/ic_person_black_24dp"
+                    app:civ_border_width="2dp" />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/abel"
+                    android:id="@+id/username"
+                    android:layout_height="wrap_content"
+                   android:textSize="24sp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#000"
+                    android:background="@drawable/tabbg"
+                    android:layout_marginStart="5dp"
+
+                   />
+        </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="30dp"
+               android:textSize="14sp"
+               android:gravity="bottom"
+               android:layout_marginStart="3dp"
+               android:textColor="#000"
+               android:text="About"/>
+
+
+
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textColor="#fff"
+                   android:textSize="14sp"
+                   android:id="@+id/about_et"
+                   android:padding="10dp"
+                   android:fontFamily="@font/changa"
+                   android:layout_margin="3dp"
+                   android:background="@drawable/greenbg"
+                   />
+
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="14sp"
+               android:layout_marginStart="3dp"
+               android:textColor="#000"
+               android:text="Phone"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/phone_tv"
+               android:padding="10dp"
+               android:textColor="#fff"
+               android:fontFamily="@font/changa"
+               android:layout_margin="3dp"
+               android:background="@drawable/greenbg"/>
+       </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

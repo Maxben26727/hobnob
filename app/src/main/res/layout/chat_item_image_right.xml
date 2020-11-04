@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:gravity="end"
+    android:orientation="vertical"
+    android:layout_marginStart="60dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:background="@drawable/background_right"
+    android:id="@+id/message_body"
+
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/senderName"
+        android:visibility="gone"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:textColor="#fff"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="40dp"
+        app:civ_border_color="#fff"
+        android:id="@+id/senderPic"
+        app:civ_border_width="2dp"
+        android:visibility="gone"
+
+        android:layout_height="40dp"/>
+    <ImageView
+        android:layout_height="200dp"
+        android:layout_width="200dp"
+        android:id="@+id/msg_image"
+        android:scaleType="center"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/abel"
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            android:paddingStart="10dp"
+            android:textColor="#E8D8D6D6"
+            android:paddingEnd="12dp"
+            android:id="@+id/time"/>
+
+
+</LinearLayout>
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="1dp"
+        android:visibility="gone"
+        android:id="@+id/seen"
+        android:layout_toEndOf="@id/message_body"
+        android:layout_centerVertical="true"
+        android:src="@drawable/seen"/>
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="1dp"
+        android:visibility="gone"
+        android:id="@+id/delivered"
+        android:layout_toEndOf="@id/message_body"
+        android:layout_centerVertical="true"
+        android:src="@drawable/delivered"/>
+    </RelativeLayout>
+    </LinearLayout>
+

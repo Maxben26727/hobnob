@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:layout_marginStart="30dp"
+    android:layout_height="wrap_content">
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="17dp"
+    android:id="@+id/message_body"
+    android:layout_alignParentEnd="true"
+    android:background="@drawable/background_right"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/show_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/iceland"
+        android:paddingStart="12dp"
+        android:paddingTop="3dp"
+        android:layout_marginTop="3dp"
+        android:paddingEnd="12dp"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/senderName"
+        android:visibility="gone"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:textColor="#fff"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="40dp"
+        app:civ_border_color="#fff"
+        android:id="@+id/senderPic"
+        app:civ_border_width="2dp"
+        android:visibility="gone"
+
+        android:layout_height="40dp"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/abel"
+            android:textSize="12sp"
+            android:layout_gravity="start"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textAllCaps="false"
+            android:textColor="#E8D8D6D6"
+            android:id="@+id/time"/>
+
+
+
+</LinearLayout>
+
+    <ImageView
+    android:layout_width="15dp"
+    android:layout_height="15dp"
+    android:visibility="gone"
+    android:id="@+id/seen"
+
+android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+    android:src="@drawable/seen"/>
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:id="@+id/delivered"
+        android:src="@drawable/delivered"/>
+
+</RelativeLayout>
+
+

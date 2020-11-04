@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/title"
+    android:gravity="center_horizontal"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="30dp"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOB "
+        android:textColor="#fff"
+        android:fontFamily="@font/abel"
+        android:textSize="20sp"
+        android:layout_gravity="center_vertical"
+        />
+    <ImageView
+
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/logo_rounded"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" NOB"
+        android:fontFamily="@font/abel"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:layout_gravity="center_vertical"
+        />
+
+
+</LinearLayout>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/frame"
+            android:layout_below="@id/title"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="2dp"
+            app:cardElevation="0dp"
+            android:layout_marginBottom="3dp"
+            app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#FFFFFF"
+            android:layout_above="@id/nav"/>
+
+
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:weightSum="4"
+       android:id="@+id/nav"
+      android:layout_margin="5dp"
+       android:gravity="center_horizontal"
+       android:layout_alignParentBottom="true"
+       android:background="#00FFFFFF"
+       >
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:gravity="center"
+           android:id="@+id/conatct_cv"
+
+           android:layout_gravity="fill"
+           android:outlineProvider="none"
+
+           android:orientation="vertical"
+
+           >
+
+           <TextView
+               android:id="@+id/nav1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:fontFamily="@font/quantico"
+               android:padding="5dp"
+               android:text="Contacts"
+               android:textAlignment="center"
+               android:textColor="#B1B0B0"
+               android:textSize="14sp" />
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:outlineProvider="none"
+           android:id="@+id/chats_cv"
+
+android:gravity="end"
+           android:orientation="vertical"
+           >
+
+           <TextView
+               android:id="@+id/nav2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal"
+               android:fontFamily="@font/quantico"
+
+               android:padding="5dp"
+               android:text="Chats"
+
+               android:textColor="#B1B0B0"
+               android:textSize="14sp"
+
+               />
+
+
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:gravity="center"
+           android:id="@+id/group_cv"
+
+           android:layout_gravity="fill"
+
+           android:outlineProvider="none"
+
+           android:orientation="vertical"
+
+           >
+
+           <TextView
+               android:id="@+id/nav3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+
+               android:layout_gravity="center"
+               android:fontFamily="@font/quantico"
+               android:padding="5dp"
+
+               android:text="Groups"
+               android:textAlignment="center"
+               android:textColor="#B1B0B0"
+               android:textSize="14sp" />
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:layout_gravity="fill"
+            android:id="@+id/profile_cv"
+           android:outlineProvider="none"
+           android:orientation="vertical"
+
+           >
+
+           <TextView
+               android:id="@+id/nav4"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal"
+
+               android:fontFamily="@font/quantico"
+               android:padding="5dp"
+               android:text="Profile"
+
+               android:textAlignment="center"
+               android:textColor="#B1B0B0"
+               android:textSize="14sp" />
+
+       </LinearLayout>
+
+
+
+   </LinearLayout>
+
+</RelativeLayout>

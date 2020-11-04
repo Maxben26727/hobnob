@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:background="@drawable/chat_bg"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image_reg"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+
+                app:civ_border_color="#000"
+                android:src="@drawable/ic_person_black_24dp"
+                app:civ_border_width="2dp" />
+
+            <ImageButton
+                android:id="@+id/profile_select_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-35dp"
+                android:layout_alignTop="@id/profile_image_reg"
+                android:layout_toEndOf="@id/profile_image_reg"
+                android:background="@drawable/black_radius"
+                android:padding="5dp"
+                android:src="@drawable/ic_photo_camera_black_24dp" />
+
+        </RelativeLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:fontFamily="@font/abel"
+            android:id="@+id/username"
+            android:textColorHint="#A5A3A3"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="#000"
+            android:background="@drawable/tabbg"
+            android:elevation="1dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"
+            android:hint="Username"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:textColorHint="#A5A3A3"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:textColor="#000"
+            android:fontFamily="@font/abel"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/tabbg"
+            android:elevation="1dp"
+            android:id="@+id/about"
+            android:inputType="textMultiLine"
+android:maxLength="130"
+            android:hint="about"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:textColorHint="#A5A3A3"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:textColor="#000"
+            android:fontFamily="@font/abel"
+            android:textAlignment="center"
+            android:visibility="gone"
+            android:background="@drawable/tabbg"
+            android:elevation="1dp"
+            android:id="@+id/verification"
+            android:inputType="phone"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Verify Code"/>
+
+
+
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:visibility="visible"
+        android:id="@+id/next"
+       android:layout_margin="10dp"
+        android:background="@drawable/btn_blue_bg"
+        android:textColor="#fff"/>
+
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi_dialog"
+        style="@style/AVLoadingIndicatorView"
+        app:indicatorName="BallClipRotateMultipleIndicator"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+      android:layout_margin="5dp"
+        android:layout_gravity="center_horizontal"
+        app:indicatorColor="#1A02F8"
+        android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/percentage"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:textColor="#1A02F8"
+            android:text="0%"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/changa"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+</LinearLayout>
+</RelativeLayout>
